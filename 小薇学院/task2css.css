@@ -1,11 +1,36 @@
 body{
 	background-color:#DDDDDD;
 }
+/*标题导航栏*/
 .title{
 	background-color:#696969;
 	margin:15px;
-	padding:10px 10px;
+	padding:0;
 }
+.ul-title{
+	float:right;
+	list-style-type:none;
+	margin:28px;
+	padding:0;	
+}
+.ul-title li{
+	display:inline;
+	float:left;
+	text-align:center;	
+}
+.ul-title a:link,a:visited{
+	background-color:#696969;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	padding:0px 5px;
+	
+}
+.ul-title a:hover,a:active{
+	background-color:#cc0000;
+}
+/*正文样式设计*/
 .articles{
 	background-color:#FFFFFF;
 	margin:15px;
@@ -17,17 +42,65 @@ body{
 	line-height:1.5em;
 	word-spacing:2px;
 }
-.ul-title{
-	list-style-type:none;
-	margin:0;
-	padding:0;
+/*图片样式设计*/
+.img_neko{
+	border-style:solid;
+	border-width:1px;
+	border-color:#000;
+	margin:5px;
+	text-align:center;
+	width:220px;
 }
-.ul-title li{
-	display:inline;
-	float:right;
-	text-align:right;
+/*表格样式设计*/
+table{
+	width:100%;
 }
-.ul-title a{
-	display:block;
-	width:120px;
+thead{
+	background-color:black;
+	color:white;
+}
+tfoot{
+	background-color:#ccc;
+}
+.three-row{
+	color:black;
+	font-size:1.2em;
+	text-align:center;
+}
+/*表单样式设计*/
+.form-title{
+	border-left:3px solid #ccc;
+}
+form input,select,span{
+	position:absolute;
+	left:40%;
+}
+form label{
+	position:absolute;
+	right:60%;
+}
+textarea{
+	position:absolute;
+	left:40%;
+	font-size:1.2em;
+}
+.input-submit{
+	border-radius: 10px;
+	background-color: #4169e1;
+	color: white;
+	font-size: 100%;
+	height: 40px;
+	text-align: center;
+	width: 100%;
+}
+/*页脚样式*/
+footer{
+	background-color:#696969;
+	color:#fff;
+	height:60px;
+	text-align:center;
+}
+#copyright {
+	height:40px;
+	padding:20px 0px;
 }
