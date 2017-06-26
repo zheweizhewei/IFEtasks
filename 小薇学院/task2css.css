@@ -1,0 +1,33 @@
+body{
+	background-color:#DDDDDD;
+}
+.title{
+	background-color:#696969;
+	margin:15px;
+	padding:10px 10px;
+}
+.articles{
+	background-color:#FFFFFF;
+	margin:15px;
+	padding:20px 10px;
+	
+	font-family:SimHei,Arial,Verdana,Sans-serif;
+	font-style:normal;
+	text-align:left;
+	line-height:1.5em;
+	word-spacing:2px;
+}
+.ul-title{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.ul-title li{
+	display:inline;
+	float:right;
+	text-align:right;
+}
+.ul-title a{
+	display:block;
+	width:120px;
+}
