@@ -18,16 +18,15 @@ body{
 	float:left;
 	text-align:center;	
 }
-.ul-title a:link,a:visited{
+.ul-title a:link,.ul-title a:visited{
 	background-color:#696969;
 	color:#FFFFFF;
 	font-weight:bold;
 	text-align:center;
 	text-decoration:none;
-	padding:0px 5px;
-	
+	padding:0px 5px;	
 }
-.ul-title a:hover,a:active{
+.ul-title a:hover,.ul-title a:active{
 	background-color:#cc0000;
 }
 /*正文样式设计*/
@@ -55,6 +54,9 @@ body{
 table{
 	width:100%;
 }
+td{
+	text-align:center;
+}
 thead{
 	background-color:black;
 	color:white;
@@ -63,15 +65,16 @@ tfoot{
 	background-color:#ccc;
 }
 .three-row{
-	color:black;
+	color:#000;
 	font-size:1.2em;
 	text-align:center;
 }
 /*表单样式设计*/
+/*因为绝对定位的框与文档流无关，所以它们可以覆盖页面上的其它元素。*/
 .form-title{
 	border-left:3px solid #ccc;
 }
-form input,select,span{
+form>input,form select,form span{
 	position:absolute;
 	left:40%;
 }
@@ -79,10 +82,12 @@ form label{
 	position:absolute;
 	right:60%;
 }
+/*可以通过 cols 和 rows 属性来规定 textarea 的尺寸，不过更好的办法是使用 CSS 的 height 和 width 属性。*/
 textarea{
 	position:absolute;
 	left:40%;
-	font-size:1.2em;
+	width:380px;
+	height:100px;
 }
 .input-submit{
 	border-radius: 10px;
@@ -90,8 +95,10 @@ textarea{
 	color: white;
 	font-size: 100%;
 	height: 40px;
+	position:absolute;
+	left:5%;
 	text-align: center;
-	width: 100%;
+	width: 90%;
 }
 /*页脚样式*/
 footer{

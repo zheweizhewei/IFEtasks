@@ -8,7 +8,7 @@
 
 <body>
 
-<div class="title">
+<div class="title" id="title">
 	<img class="img-baidu" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2920084749,2018893236&fm=58&s=39C718720E8EBE011B398BAC0300F024&bpow=121&bpoh=75">
 	<!--可以通过设置锚href="#name"转到页面的特定位置,id也可以达到同样的效果-->
 	<ul class="ul-title">
@@ -90,15 +90,17 @@
 		<tr>
 			<td>表格内容</td>
 			<td>表格内容</td>
-			<td rowspan="3"><a class="three-row" href=" " title="空的啦">操作</a></td>
+			<td><a class="three-row" href="#title" title="空的啦">操作</a></td>
 		</tr>
 		<tr>
 			<td>表格内容</td>
 			<td>表格内容</td>
+			<td><a class="three-row" href="#title" title="空的啦">操作</a></td>
 		</tr>
 		<tr>
 			<td>表格内容</td>
 			<td>表格内容</td>
+			<td><a class="three-row" href="#title" title="空的啦">操作</a></td>
 		</tr>
 	</tbody>
 	<tfoot>
@@ -116,23 +118,30 @@
 
 	<form>
 	<!--type-"mail" html5可以自动验证邮箱-->
-	<label>请输入邮箱地址：</label><input type="mail" value="这是一个文本输入框"> <br />
+	<label>请输入邮箱地址：</label>
+		<input type="mail" value="这是一个文本输入框"> <br />
 	<span style="color:gray; font-size:10px">邮箱地址请按要求格式输入!</span> <br />
 	<!--placeholder与value的区别-->
-	<label>请输入密码：</label><input type="password" placeholder="输入密码"> <br />
-	<label>请再次输入密码：</label><input type="password" placeholder="再次输入密码"> <br />
+	<label>请输入密码：</label>
+		<input type="password" placeholder="输入密码"> <br />
+	<label>请再次输入密码：</label>
+		<input type="password" placeholder="再次输入密码"> <br />
 	<span style="color:gray; font-size:10px">密码为6-16位英文数字组合!</span> <br />
-	<label>性别：</label><span><input type="radio" name="sex" value="male" checked /> 男 
-								<input type="radio" name="sex" value="female" /> 女 </span><br />
-	<label>城市：</label><select><option value="beijing" selected="selected">北京</option>
+	<label>性别：</label>
+		<span><a><input type="radio" name="sex" value="male" checked /> 男</a> 
+				<a><input type="radio" name="sex" value="female" /> 女</a> </span><br />
+	<label>城市：</label>
+			<select><option value="beijing" selected="selected">北京</option>
 			 <option value="hongkong">香港</option><option value="taipei">台北</option><option value="nyc">纽约</option>
 			 <option value="tokyo">东京</option><option value="paris">巴黎</option><option value="syndey">悉尼</option></select> <br />
-	<label>爱好：</label><span><input type="checkbox" value="sports" name="sports"/>运动
-								<input type="checkbox" value="arts" name="arts"/>艺术
-								<input type="checkbox" value="science" name="science"/>科学
+	<label>爱好：</label>
+		<span><a><input type="checkbox" value="sports" name="sports"/>运动</a>
+			<a><input type="checkbox" value="arts" name="arts"/>艺术</a>
+			<a><input type="checkbox" value="science" name="science"/>科学</a>
 						</span><br />
-	<label>个人描述：</label><textarea rows=5em col=70em>这是一个多行输入框，输入您的个人描述</textarea> <br />
-			<input style="position:absolute;left:0" class="input-submit" type="submit" value="确认提交" />
+	<label>个人描述：</label>
+		<textarea>这是一个多行输入框，输入您的个人描述</textarea> <br /><br /><br /><br /><br />
+			<input class="input-submit" type="submit" value="确认提交" /> <br /><br />
 	</form>
 </div>
 <footer>
