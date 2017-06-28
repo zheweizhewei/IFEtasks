@@ -1,0 +1,137 @@
+body{
+	background-color:#DDDDDD;
+}
+#article1,#article2,#article3,#images{
+	margin-right:500px;
+}
+/*标题导航栏*/
+.title{
+	background-color:#696969;
+	margin:15px;
+	padding:0;
+}
+.ul-title{
+	float:right;
+	list-style-type:none;
+	margin:28px;
+	padding:0;	
+}
+.ul-title li{
+	display:inline;
+	float:left;
+	text-align:center;	
+}
+.ul-title a:link,.ul-title a:visited{
+	background-color:#696969;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	padding:0px 5px;	
+}
+.ul-title a:hover,.ul-title a:active{
+	background-color:#cc0000;
+}
+/*正文样式设计*/
+.articles{
+	background-color:#FFFFFF;
+	margin:15px;
+	padding:20px 10px;
+	
+	font-family:SimHei,Arial,Verdana,Sans-serif;
+	font-style:normal;
+	text-align:left;
+	line-height:1.5em;
+	word-spacing:2px;
+}
+/*图片样式设计*/
+/*内联元素的宽高以及顶底边距不可设置，元素的宽度即为所含图片文字的宽度，不可改变！*/
+/*内联块状元素可以和其他元素位于一行，但是宽高以及顶底边距可以设置。*/
+.img_neko{
+	border-style:solid;
+	border-width:1px;
+	border-color:#000;
+	margin:5px;
+	text-align:center;
+	display:inline-block;
+}
+/*表格样式设计*/
+table{
+	width:100%;
+}
+td{
+	text-align:center;
+}
+thead{
+	background-color:black;
+	color:white;
+}
+tfoot{
+	background-color:#ccc;
+}
+.three-row{
+	color:#000;
+	font-size:1.2em;
+	text-align:center;
+}
+/*侧栏表单样式设计*/
+
+/*因为绝对定位的框与文档流无关，所以它们可以覆盖页面上的其它元素。*/
+/*两个垂直外边距相遇时会合并，保留其中较大者。行内框，浮动框和绝对定位框之间的外边距不合并*/
+/*定位有三种，其中absolute和fixed这两种和浮动都会使元素脱离文档流。所以absolute和fixed会覆盖掉浮动的。
+relative相对定位可以和float叠加，在float后的位置上再相对定位。*/
+/*脱离文档流，也就是将元素从普通的布局排版中拿走，其他盒子在定位的时候，会当做脱离文档流的元素不存在而进行定位。
+需要注意的是，使用float脱离文档流时，其他盒子会无视这个元素，但其他盒子内的文本依然会为这个元素让出位置，环绕在周围。
+而对于使用absolute positioning脱离文档流的元素，其他盒子与其他盒子内的文本都会无视它。
+
+作者：张秋怡
+链接：https://www.zhihu.com/question/24529373/answer/29135021
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。*/
+#article4{
+	float:right;
+	width:450px;
+	margin-top:0px;
+	position:relative;
+}
+.form-title{
+	border-left:3px solid #ccc;
+}
+/*绝对定位的元素的位置相对于最近的已定位祖先元素，如果元素没有已定位的祖先元素，那么它的位置相对于最初的包含块。*/
+form>input,form select,form span{
+	position:absolute;
+	left:40%;
+}
+form label{
+	position:absolute;
+	right:60%;
+}
+/*可以通过 cols 和 rows 属性来规定 textarea 的尺寸，不过更好的办法是使用 CSS 的 height 和 width 属性。*/
+textarea{
+	position:absolute;
+	left:40%;
+	width:250px;
+	height:100px;
+}
+.input-submit{
+	border-radius: 10px;
+	background-color: #4169e1;
+	color: white;
+	font-size: 100%;
+	height: 40px;
+	position:absolute;
+	left:5%;
+	text-align: center;
+	width: 90%;
+}
+/*页脚样式*/
+footer{
+	background-color:#696969;
+	color:#fff;
+	height:60px;
+	text-align:center;
+}
+#copyright {
+	height:40px;
+	padding:20px 0px;
+}

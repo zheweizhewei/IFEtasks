@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>小薇学院任务一</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="task5css.css" />
+</head>
+
+<body>
+
+<div class="title" id="title">
+	<img class="img-baidu" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2920084749,2018893236&fm=58&s=39C718720E8EBE011B398BAC0300F024&bpow=121&bpoh=75">
+	<!--可以通过设置锚href="#name"转到页面的特定位置,id也可以达到同样的效果-->
+	<ul class="ul-title">
+	<li><a href="#article1">查看文章1</a></li>
+	<li><a href="#article2">查看文章2</a></li>
+	<li><a href="#article3">查看文章3</a></li>
+	</ul>
+</div>
+
+<div class="articles" id="article4">
+	<h2 class="form-title">这里以后是一个侧栏，这是侧栏标题</h2>
+	<h3>侧栏注册窗口标题</h3>
+
+	<form>
+	<!--type-"mail" html5可以自动验证邮箱-->
+	<label>请输入邮箱地址：</label>
+		<input type="mail" value="这是一个文本输入框"> <br />
+	<span style="color:gray; font-size:10px">邮箱地址请按要求格式输入!</span> <br />
+	<!--placeholder与value的区别-->
+	<label>请输入密码：</label>
+		<input type="password" placeholder="输入密码"> <br />
+	<label>请再次输入密码：</label>
+		<input type="password" placeholder="再次输入密码"> <br />
+	<span style="color:gray; font-size:10px">密码为6-16位英文数字组合!</span> <br />
+	<label>性别：</label>
+		<span><a><input type="radio" name="sex" value="male" checked /> 男</a> 
+				<a><input type="radio" name="sex" value="female" /> 女</a> </span><br />
+	<label>城市：</label>
+			<select><option value="beijing" selected="selected">北京</option>
+			 <option value="hongkong">香港</option><option value="taipei">台北</option><option value="nyc">纽约</option>
+			 <option value="tokyo">东京</option><option value="paris">巴黎</option><option value="syndey">悉尼</option></select> <br />
+	<label>爱好：</label>
+		<span><a><input type="checkbox" value="sports" name="sports"/>运动</a>
+			<a><input type="checkbox" value="arts" name="arts"/>艺术</a>
+			<a><input type="checkbox" value="science" name="science"/>科学</a>
+						</span><br />
+	<label>个人描述：</label>
+		<textarea>这是一个多行输入框，输入您的个人描述</textarea> <br /><br /><br /><br /><br />
+			<input class="input-submit" type="submit" value="确认提交" /> <br /><br />
+	</form>
+</div>
+
+<div class="articles" id="article1">	
+	<h2><a name="article1">文章1一级标题</a></h2>
+	<h3>文章1二级标题</h3>
+	<p>文章1作者&nbsp;&nbsp;&nbsp;文章2发表时间</p>
+	<p>这是一个很长的段落 这是一个很长的段落 这是一个很长的段落 这是一个很长的段落 这是一个很长的段落
+	这是一个很长的段落 这是一个很长的段落 这是一个很长的段落 这是一个很长的段落 这是一个很长的段落 <br />换行了<br />
+	这是一个很长的段落 这是一个很长的段落 <a href="douban.com">这是一个链接，链到豆瓣</a>这是一个很长的段落 
+	这是一个很长的段落 这是一个很长的段落 <strong>粗体粗体粗体粗体粗体</strong>这是一个很长的段落 这是一个很长的段落 </p>
+	<img src="http://imglf5.ph.126.net/PFy-QoH9YccAnohWkpfytQ==/6597686592679209915.gif" alt="猫咪老师" title="夏目友人帐">
+	<ul>
+		<li>列表项目一</li>
+		<li>列表项目二</li>
+		<li>列表项目三</li>
+	</ul>
+</div>
+
+<div class="articles" id="article2">
+	<h2><a name="article2">文章2一级标题</a></h2>
+	<h3>文章2二级标题</h3>
+	<p>文章2作者&nbsp;&nbsp;&nbsp;文章2发表时间</p>
+	<p>这是一个很长的段落 这是一个很长的段落 这是一个很长的段落 这是一个很长的段落 这是一个很长的段落
+	这是一个很长的段落 这是一个很长的段落 这是一个很长的段落 这是一个很长的段落 这是一个很长的段落 <br />换行了<br />
+	这是一个很长的段落 这是一个很长的段落 <a href="douban.com">这是一个链接，链到豆瓣</a>这是一个很长的段落 
+	这是一个很长的段落 这是一个很长的段落 <strong>粗体粗体粗体粗体粗体</strong>这是一个很长的段落 这是一个很长的段落 </p>
+	<img src="http://imglf5.ph.126.net/PFy-QoH9YccAnohWkpfytQ==/6597686592679209915.gif" alt="猫咪老师" title="夏目友人帐">
+</div>
+
+<figure class="articles" id="images">
+	<h2>图片</h2>
+	<div class="img_neko">
+		<figcaption>娘口三三</figcaption>
+		<img src="https://imgsa.baidu.com/%D0%A1%C3%A8%D0%C7%C6%DA%CB%C4/pic/item/994e933757134683d0a2d3b7.jpg" alt="猫咪老师" title="夏目友人帐">
+	</div>
+	
+	<div class="img_neko">
+		<figcaption>娘口三三</figcaption>
+		<img src="https://imgsa.baidu.com/%D0%A1%C3%A8%D0%C7%C6%DA%CB%C4/pic/item/61888cb4c032f8c031add1b6.jpg" alt="猫咪老师" title="夏目友人帐">
+	</div>
+	
+	<div class="img_neko">
+		<figcaption>娘口三三</figcaption>
+		<img src="https://imgsa.baidu.com/%D0%A1%C3%A8%D0%C7%C6%DA%CB%C4/pic/item/c013b81b9bf42e804aedbcb5.jpg" alt="猫咪老师" title="夏目友人帐">
+	</div>
+	
+	<div class="img_neko">
+		<figcaption>娘口三三</figcaption>
+		<img src="https://imgsa.baidu.com/%D0%A1%C3%A8%D0%C7%C6%DA%CB%C4/pic/item/ef205e5ad4a0201e2834f0b4.jpg" alt="猫咪老师" title="夏目友人帐">
+	</div>	
+</figure>
+
+<div class="articles" id="article3">
+	<h2><a name="article3">文章3一级标题</a></h2>
+	<h3>文章3二级标题</h3>
+	<p>文章3作者&nbsp;&nbsp;&nbsp;文章3发表时间</p>
+	<ol>
+	<li>排名1</li>
+	<li>排名2</li>
+	<li>排名3</li>
+	</ol>
+	<!--表格的<thead><tbody><tfoot>要一起使用-->
+	<table border="1">
+	<thead>
+		<tr>
+			<td>表头</td>
+			<td>表头</td>
+			<td>表头</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>表格内容</td>
+			<td>表格内容</td>
+			<td><a class="three-row" href="#title" title="空的啦">操作</a></td>
+		</tr>
+		<tr>
+			<td>表格内容</td>
+			<td>表格内容</td>
+			<td><a class="three-row" href="#title" title="空的啦">操作</a></td>
+		</tr>
+		<tr>
+			<td>表格内容</td>
+			<td>表格内容</td>
+			<td><a class="three-row" href="#title" title="空的啦">操作</a></td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td>总计</td>
+			<td colspan="2">1000</td>
+		</tr>
+	</tfoot>
+	</table>
+</div>
+
+<footer>
+	<p id="copyright">版权所有&copy;</p>
+</footer>	
+</body>
+</html>
