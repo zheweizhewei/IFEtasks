@@ -1,0 +1,81 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.page{
+	width:980px;
+	height:1386px;
+	position:relative;
+	left:50%;
+	transform:translate(-490px,0);
+	border:1px solid #ccc;
+	margin:10px; 0px;
+}
+/*页眉样式设计*/
+.head{
+	width:892px;
+	height:61px;
+	border-bottom:2px solid #938e8c;
+	position:relative;
+	left:44px;
+}
+.head p{
+	width:110px;
+	height:61px;
+	background-color:#d45d5c;
+	color:#fff;
+	font:12px "黑体",arial,sans-serif;
+	position:relative;
+}
+.head p label{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+}
+.head>label{
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	color:#d45d5c;
+	font:12px "黑体",arial,sans-serif;
+}
+/*模块2-图片样式设计*/
+.image-top{
+	width:641px;
+	height:301px;
+	position:relative;
+	left:44px;
+	top:30px;
+	
+	display:inline-block;
+}
+.cat1{
+	
+}
+.block-green{
+	width:191px;
+	height:301px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-color:#75b86b;
+	opacity:0.5;
+}
+.block-red{
+	width:191px;
+	height:301px;
+	position:absolute;
+	right:0px;
+	top:0px;
+	background-color:#d45d5c;
+	opacity:0.5;
+}
+/*模块三-图片右侧栏样式设计*/
+.right-block{
+	width:203px;
+	height:301px;
+	position:relative;
+	left:92px;
+	
+	display:inline-block;
+}
