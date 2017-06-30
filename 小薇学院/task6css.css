@@ -89,6 +89,7 @@
 	text-decoration:underline;
 	font:small-caps 24px/40px "微软雅黑",SimHei;
 	color:#000;
+	font-variant: small-caps;
 }
 .right-block .p3{
 	font:italic 12px/10px "楷体",SimHei;
