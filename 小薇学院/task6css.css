@@ -321,17 +321,17 @@
 	height:36px;
 	display:inline-block;
 }
-
-
-
-
-
-
-/*页脚样式设计
+/*页脚样式设计*/
 .foot{
-	height:61px;
 	border-top:2px solid #938e8c;
-	position:absolute;
-	bottom:0px;
+	position:relative;
+	margin-top:980px;
 }
-*/
+.foot p{
+	position:absolute;
+	right:0px;
+	top:0px;
+	text-align:left;
+	color:#d45d5c;
+	font:12px "黑体";
+}
