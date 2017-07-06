@@ -78,4 +78,92 @@
 	line-height:2em;
 	padding:0px 120px;
 }
+/*part2*/
+.part2{
+	clear:both;
+	margin-bottom:40px;
+}
+.part2 div{
+	width:24%;
+	display:inline-block;
+	text-align:center;
+	padding:40px 0px;
+}
+.part2 p{
+	font:14px "黑体";
+	width:-webkit-calc(24% - 1px);
+	color:#767777;
+	border-right:1px solid #767777;
+	display:inline-block;
+	text-align:center;
+}
+.part2 .p4{
+	border-right:0px solid #767777;
+}
 /*part3*/
+.part3{
+	padding:50px 0px;
+	text-align:center;
+	background-color:#ececec;
+}
+.part3 p{
+	font:45px "黑体";
+	color:#a1a1a1;
+	padding:21px 0px;
+}
+/*part4*/
+.part4{
+	text-align:center;
+	color:#fff;
+	position:relative;
+}
+.part4 img{
+	width:100%;
+}
+.part4 .p1{
+	font:21px "微软雅黑";
+	position:absolute;
+	top:10%;
+	left:42%;
+}
+.part4 .p1 span{
+	border-bottom:2px solid #fff;
+}
+.part4 .p1:hover{
+	border-bottom:2px solid #fff;
+}
+.part4 .p2{
+	font:12px "微软雅黑";
+	position:absolute;
+	top:22%;
+	left:38%;
+}
+.part4 select{
+	width:237px;
+	height:40px;
+}
+.part4 .select1{
+	position:absolute;
+	top:50%;
+	left:10%;
+}
+.part4 .select2{
+	position:absolute;
+	top:50%;
+	left:30%;
+}
+.part4 .select3{
+	position:absolute;
+	top:50%;
+	left:50%;
+}
+.part4 input{
+	width:237px;
+	height:38px;
+	background-color:#e74f4d;
+	font:14px "微软雅黑";
+	color:#fff;
+	position:absolute;
+	top:50%;
+	left:70%
+}
