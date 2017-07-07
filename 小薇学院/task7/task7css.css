@@ -326,7 +326,47 @@
 }
 /*part9*/
 .part9{
-	
+	position:relative;
+	padding:10px 150px 120px 150px;
+}
+.part9 .left-part{
+	width:30%;
+	display:inline-block;
+	color:#231815;
+	margin-right:50px;
+}
+.part9 .p1-1,.part9 .p2-1,.part9 .p3-1{
+	font:14px "黑体";
+	line-height:2em;
+	clear:both;
+}
+.part9 .p1-2,.part9 .p2-2{
+	font:10px "宋体";
+	line-height:2em;
+	clear:both;
+}
+.part9 .p1-3,.part9 .p2-3,.part9 .p3-3{
+	font:10px "宋体";
+	line-height:2em;
+	float:right;
+}
+.part9 .right-part{
+	display:inline-block;
+}
+.part9 input{
+	width:309px;
+	height:35px;
+	background-color:#eee;
+	margin:5px;
+}
+.part9 textarea{
+	width:638px;
+	height:80px;
+	margin:5px;
+}
+.part9 .submit{
+	width:638px;
+	height:35px;
 }
 /*part10*/
 .part10{
