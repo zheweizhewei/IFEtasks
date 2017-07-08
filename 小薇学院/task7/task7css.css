@@ -26,12 +26,17 @@
 	margin:20x,60px;
 	font:14px "微软雅黑";
 }
-.navigator a{
+.navigator a:hover,.navigator a:visited,.navigator a:link,.navigator a:active {
+    /*清除链接默认样式*/
+	text-decoration: none;
+}
+.navigator a:link,.navigator a:visited{
+	color:#000;
 	display:inline-block;
 	padding:15px;
 	box-sizing:border-box;
 }
-.navigator a:hover{
+.navigator a:hover,.navigator a:active{
 	border-bottom:2px solid #e74f4d;
 	color:#e74f4d;
 }
@@ -140,7 +145,19 @@
 }
 .part4 select{
 	width:237px;
-	height:40px;
+	height:35px;
+	color:#aaa;
+	padding:5px;
+	border:0px solid #fff;
+	/*选择框样式*/
+	/*很关键：将默认的select选择框样式清除*/
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+
+	/*在选择框的最右侧中间显示小箭头图片*/
+	-webkit-background-size:50% 50%;
+	background:url("./img/down-arrow.png") no-repeat scroll right center #fff;
 }
 .part4 .select1{
 	position:absolute;
@@ -157,12 +174,13 @@
 	top:50%;
 	left:50%;
 }
-.part4 input{
+.part4 .submit{
 	width:237px;
 	height:38px;
 	background-color:#e74f4d;
 	font:14px "微软雅黑";
 	color:#fff;
+	border:0px solid #fff;
 	position:absolute;
 	top:50%;
 	left:70%
@@ -357,16 +375,24 @@
 	width:309px;
 	height:35px;
 	background-color:#eee;
+	border:1px solid #eee;
 	margin:5px;
 }
 .part9 textarea{
 	width:638px;
 	height:80px;
+	background-color:#eee;
+	border:1px solid #eee;
 	margin:5px;
+	
 }
 .part9 .submit{
 	width:638px;
 	height:35px;
+	font:14px "黑体";
+	background-color:#eee;
+	border:1px solid #eee;
+	margin:5px;
 }
 /*part10*/
 .part10{
@@ -387,11 +413,17 @@
 	width:430px;
 	height:35px;
 	margin:20px 0px;
+	background-color:#fff;
+	border:0px solid #fff;
 }
-.part10 input{
+.part10 .submit{
 	width:80px;
 	height:35px;
 	margin:20px 0px;
+	font:15px "微软雅黑";
+	color:#fff;
+	background-color:#6f7278;
+	border:0px solid #6f7278;
 }
 /*foot*/
 .foot{
@@ -406,4 +438,13 @@
 	top:15px;
 	right:50px;
 	/*float:right;     不明原因的达不到预计效果...*/
+}
+.foot a:hover,.foot a:visited,.foot a:link,.foot a:active {
+	text-decoration: none;
+}
+.foot a:visited,.foot a:link{
+	color:#fff;
+}
+.foot a:hover,.foot a:active{
+	color:#fff;
 }
