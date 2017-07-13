@@ -5,3 +5,305 @@
 .container{
 	width:100%;
 }
+/*顶栏*/
+.head{
+	width:100%;
+	height:57px;
+	background-color:rgb(33,137,191);
+}
+.head .logo{
+	margin:10px 50px;
+}
+.head .login{
+	display:inline-block;
+	float:right;
+	margin:16px 80px 20px 0px;
+	cursor:pointer;
+}
+.head .login a{
+	font:12px "宋体";
+	color:#fff;
+}
+.head .login img{
+	/*TIPS:使得图片和文字在同一水平线上*/
+	vertical-align:middle;
+}
+.head .search{
+	display:inline-block;
+	position:relative;
+	float:right;
+	margin:13px 30px;
+}
+.head .search input{
+	height:30px;
+	width:252px;
+	border:0px solid #fff;
+	border-radius:15px;
+	padding-left:40px;
+	-webkit-border-radius:15px;
+	/*
+	-webkit-background-size:50% 50%;
+	background:url("./img/search.gif") no-repeat scroll left center #fff;
+	*/
+}
+.head .search img{
+	position:absolute;
+	left:15px;
+	top:7px;
+}
+/*侧栏*/
+.side{
+	width:260px;
+	height:1235px;
+	background-color:rgb(42,46,61);
+	float:left;
+	font:12px "黑体";
+	color:#6e8095;
+}
+/*主体*/
+.main{
+	background-color:rgb(237,237,237);
+}
+.main .main-title{
+	width:100%;
+	background-color:#fff;
+	padding:7px 0px;
+	padding-left:300px;
+}
+.main .main-title p{
+	font:12px "黑体";
+	color:#aaa;
+}
+.main .text{
+	padding:15px 50px 200px 310px;
+}
+/*part1*/
+.main .part1{
+	/*width:100%;*/
+	background-color:#fff;
+	padding:7px 30px;
+	margin-bottom:7px;
+	position:relative;
+}
+.main .part1 span{
+	font:12px "黑体";
+	color:#aaa;
+}
+.main .part1 div{
+	display:inline-block;
+}
+.main .part1 select{
+	height:24px;
+	border:1px solid rgb(233,233,233);
+}
+.part1 .item,.part1 .man,.part1 .info{
+	margin-right:20px;
+	line-height:1.8em;
+}
+.part1 .item{
+	vertical-align:top;
+}
+.part1 .man{
+	margin-right:50px;
+}
+.part1 .man select{
+	width:120px;
+}
+.part1 .man img{
+	position:absolute;
+	top:12px;
+	left:300px;
+}
+.part1 .info .date{
+	width:118px;
+	height:22px;
+	border:1px solid rgb(233,233,233);
+}
+.part1 .info .time,.part1 .info .people{
+	width:60px;
+}
+.part1 .info .deal{
+	width:120px;
+}
+.part1 .search{
+	/*为什么这里直接用middle居中不了？？？*/
+	vertical-align:top;
+	margin-top:15px;
+}
+.part1 .submit{
+	width:53px;
+	height:26px;
+	background-color:rgb(56,138,193);
+	color:#fff;
+	font:12px "黑体";
+	border:0px solid #fff;
+	
+}
+/*part2*/
+.part2{
+	margin-bottom:7px;
+	height:68px;
+}
+.part2 div{
+	display:inline-block;
+	background-color:#fff;
+}
+.part2 .img{
+	width:30px;
+	height:25px;
+	text-align:center;
+	vertical-align:top;
+	padding:20px 0px;
+}
+.part2 .time{
+	box-sizing:border-box;
+	width:118px;
+	height:65px;
+	margin:0px 2px;
+	padding:8px 0px;
+	border-top:2px solid #fff;
+	text-align:center;
+}
+.part2 .time:hover{
+	border-top:2px solid rgb(67,136,201);
+}
+.part2 .time p{
+	font:12px "微软雅黑";
+	margin:2px;
+}
+.part2 .time p span{
+	font:21px "微软雅黑";
+	color:#ec6500;
+}
+.part2 .history{
+	width:102px;
+	height:35px;
+	vertical-align:top;
+	padding:15px;
+}
+.part2 .history p{
+	vertical-align:top;
+	display:inline-block;
+	font:12px "微软雅黑";
+	margin-top:10px;
+}
+/*part3*/
+.part3{
+	margin-bottom:10px;
+	height:90px;
+}
+.part3 .title{
+	font:12px "微软雅黑";
+	margin-bottom:3px;
+}
+.part3>div{
+	display:inline-block;
+	position:relative;
+	box-sizing:border-box;
+	width:226px;
+	height:72px;
+	background-color:#fff;
+	padding:10px;
+}
+.part3 div div{
+	position:absolute;
+	right:12px;
+	top:12px;
+	width:60px;
+	height:48px;
+}
+.part3 div .p1{
+	font:12px "黑体";
+	margin-top:10px;
+}
+.part3 div .p2{
+	font:10px "黑体";
+	color:#aaa;
+	margin-top:5px;
+}
+.part3 .green{
+	border-left:2px solid rgb(68,178,158);
+	margin-right:20px;
+}
+.part3 .green div{
+	background-color:rgb(68,178,158);
+}
+.part3 .blue{
+	border-left:2px solid rgb(56,138,193);
+	margin-right:20px;
+}
+.part3 .blue div{
+	background-color:rgb(56,138,193);
+}
+.part3 .red{
+	border-left:2px solid rgb(208,74,54);
+	margin-right:20px;
+}
+.part3 .red div{
+	background-color:rgb(208,74,54);
+}
+.part3 .yellow{
+	border-left:2px solid rgb(226,205,70);
+}
+.part3 .yellow div{
+	background-color:rgb(226,205,70);
+}
+/*part4*/ /*part5*/
+.part4,.part5{
+	margin-bottom:10px;
+}
+.part4 .left,.part4 .right,.part5 .left,.part5 .right{
+	height:358px;
+	border:1px solid #fff;
+	border-radius:5px;
+	background-color:#fff;
+	display:inline-block;
+}
+.part4 .left,.part5 .right{
+	width:586px;
+	vertical-align:top;
+}
+.part4 .left .title,.part4 .right .title,.part5 .left .title,.part5 .right .title{
+	height:10px;
+	font:12px "黑体";
+	color:#aaa;
+	background-color:rgb(244,245,246);
+	padding:15px;
+}
+.part4 .right,.part5 .left{
+	width:388px;
+}
+.part4 .proj{
+	padding:10px 20px;
+}
+.part4 .proj p{
+	width:86px;
+	height:16px;
+	display:inline-block;
+	font:12px "微软雅黑";
+	background-color:rgb(237,237,240);
+	text-align:center;
+	padding:5px 0px;
+}
+.part4 .proj .material{
+	box-sizing:border-box;
+	height:254px;
+	padding:40px;
+	border:1px solid #aaa;
+	border-radius:5px;
+}
+.part4 .right .catalog{
+	font:12px "微软雅黑";
+	color:c2c2c2;
+}
+.part4 .right .content{
+	font:12px "微软雅黑";
+}
+.part4 .right .instruc{
+	padding:20px 40px;
+}
+.part4 #price,.part4 #responsor{
+	display:inline-block;
+	border-top:1px solid #c2c2c2;
+	border-bottom:1px solid #c2c2c2;
+}
