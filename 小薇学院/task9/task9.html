@@ -21,27 +21,37 @@
 		</div>
 		<!--侧栏-->
 		<div class="side">
-			<img src="./img/head-logo.gif" alt="failed" />
-			<p>ABC123</p>
-			<div>
-				<p>110<br />收藏</p>
-				<p>313<br />粉丝</p>
-				<ul>
-					<li><img src="./img/userTab.gif" alt="failed" />个人报表</li>
-						<ul>
-							<li><img src="./img/dir.gif" alt="failed" />folder1</li>
-							<li><img src="./img/dir-c.gif" alt="failed" />folder2</li>
-								<ul>
-									<li><img src="./img/file-c.gif" alt="failed" />file1</li>
-									<li><img src="./img/file.gif" alt="failed" />file2</li>
+			<div class="avatar">
+				<img src="./img/head-logo.gif" alt="failed" />
+				<p>ABC123</p>
+			</div>
+			<div class="info">
+				<p class="favortes">110<br />收藏</p>
+				<p class="fans">313<br />粉丝</p>
+			</div>
+			<div class="list">
+				<ul class="first-list">
+					<li class="report-form"><img src="./img/userTab.gif" alt="failed" /><label>个人报表</label></li>
+						<ul class="second-list">
+							<li>
+								<img src="./img/arrow.gif" alt="failed" />
+								<img src="./img/dir.gif" alt="failed" /><label>folder1</label></li>
+							<li>
+								<img src="./img/arrow-c.gif" alt="failed" />
+								<img src="./img/dir-c.gif" alt="failed" /><label>folder2</label></li>
+								<ul class="third-list">
+									<li><img src="./img/file-c.gif" alt="failed" /><label>file1</label></li>
+									<li><img src="./img/file.gif" alt="failed" /><label>file2</label></li>
 								</ul>
-							<li><img src="./img/dir.gif" alt="failed" />folder3</li>
+							<li>
+								<img src="./img/arrow.gif" alt="failed" />
+								<img src="./img/dir.gif" alt="failed" /><label>folder3</label></li>
 						</ul>
-					<li><img src="./img/star.gif" alt="failed" />个人收藏</li>
-					<li><img src="./img/share.gif" alt="failed" />我的分享</li>
-					<li><img src="./img/star.gif" alt="failed" />图库</li>
-					<li><img src="./img/star.gif" alt="failed" />成长记录</li>
-					<li><img src="./img/userMes.gif" alt="failed" />账户信息</li>
+					<li><img src="./img/star.gif" alt="failed" /><label>个人收藏</label></li>
+					<li><img src="./img/share.gif" alt="failed" /><label>我的分享</label></li>
+					<li><img src="./img/star.gif" alt="failed" /><label>图库</label></li>
+					<li><img src="./img/star.gif" alt="failed" /><label>成长记录</label></li>
+					<li><img src="./img/userMes.gif" alt="failed" /><label>账户信息</label></li>
 				</ul>
 			</div>
 		</div>
@@ -186,22 +196,22 @@
 							<p>第一组项目</p>
 						</div>
 						<div class="instruc">
-							<div>
+							<div class="title">
 								<p class="catalog">标题</p>
 								<p class="content">项目报表三</p>
 							</div>
-							<div>
+							<div class="info">
 								<p class="catalog" id="price">价格 <br /><span>¥158</span></p>
-								<p class="content" id="responsor">负责人 <br /><span>小A</span></p>
+								<p class="catalog" id="responsor">负责人 <br /><span>小A</span></p>
 							</div>
-							<div>
+							<div class="description">
 								<p class="catalog">详细描述</p>
 								<p class="content">该项目目前负责人是...</p>
 							</div>
-							<div>
+							<div class="submit">
 								<input type="checkbox" value="1" name="secret" checked="checked" />
 								<label>遵守保密协议</label>
-								<input type="submit" value="search" />
+								<input class="search" type="submit" value="search" />
 							</div>
 						</div>
 					</div>

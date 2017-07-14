@@ -53,12 +53,59 @@
 }
 /*侧栏*/
 .side{
+	box-sizing:border-box;
 	width:260px;
 	height:1235px;
 	background-color:rgb(42,46,61);
+	/*padding:15px 40px;*/
 	float:left;
 	font:12px "黑体";
 	color:#6e8095;
+}
+.side .avatar{
+	padding:10px 40px;
+}
+.side .avatar p{
+	display:inline-block;
+	margin-top:25px;
+	margin-left:15px;
+}
+.side .avatar img{
+	vertical-align:top;
+}
+.side .info{
+	padding:10px 40px;
+}
+.side .info p{
+	display:inline-block;
+	padding:0px 22px;
+}
+.side .info .fans{
+	border-left:1px solid #6e8095;
+}
+.side ul{
+	list-style:none;
+}
+.side .list li{
+	padding:15px 40px;
+}
+.side .list li:hover{
+	background-color:rgb(56,61,78);
+}
+.side .list li img{
+	vertical-align:middle;
+}
+.side .list li label{
+	margin-left:10px;
+}
+.side .second-list{
+	padding-left:20px;
+}
+.side .third-list{
+	padding-left:40px;
+}
+.side .first-list .report-form,.side .second-list{
+	background-color:rgb(56,61,78);
 }
 /*主体*/
 .main{
@@ -107,7 +154,7 @@
 	margin-right:50px;
 }
 .part1 .man select{
-	width:120px;
+	width:105px;
 }
 .part1 .man img{
 	position:absolute;
@@ -263,7 +310,7 @@
 	width:586px;
 	vertical-align:top;
 }
-.part4 .left .title,.part4 .right .title,.part5 .left .title,.part5 .right .title{
+.part4 .left>.title,.part4 .right>.title,.part5 .left>.title,.part5 .right>.title{
 	height:10px;
 	font:12px "黑体";
 	color:#aaa;
@@ -273,10 +320,10 @@
 .part4 .right,.part5 .left{
 	width:388px;
 }
-.part4 .proj{
+.part4 .left .proj{
 	padding:10px 20px;
 }
-.part4 .proj p{
+.part4 .left .proj p{
 	width:86px;
 	height:16px;
 	display:inline-block;
@@ -285,25 +332,59 @@
 	text-align:center;
 	padding:5px 0px;
 }
-.part4 .proj .material{
+.part4 .left .proj .material{
 	box-sizing:border-box;
 	height:254px;
 	padding:40px;
 	border:1px solid #aaa;
 	border-radius:5px;
 }
+.part4 .right .instruc{
+	padding:20px 70px;
+	line-height:1.8em;
+}
 .part4 .right .catalog{
 	font:12px "微软雅黑";
-	color:c2c2c2;
+	color:#c2c2c2;
 }
 .part4 .right .content{
 	font:12px "微软雅黑";
 }
-.part4 .right .instruc{
-	padding:20px 40px;
+.part4 .right .instruc div{
+	margin-bottom:5px;
 }
-.part4 #price,.part4 #responsor{
-	display:inline-block;
+.part4 .right .instruc .info{
 	border-top:1px solid #c2c2c2;
 	border-bottom:1px solid #c2c2c2;
+}
+.part4 .right .instruc .info #price{
+	border-right:1px solid #c2c2c2;
+}
+.part4 .right .instruc .info p{
+	display:inline-block;
+	padding-right:85px;
+	vertical-align:middle;
+}
+.part4 .right .instruc .info p span{
+	color:#000;
+}
+.part4 .right .instruc .description{
+	padding-bottom:80px;
+	border-bottom:1px solid #c2c2c2;
+}
+.part4 .right .instruc .submit{
+	position:relative;
+}
+.part4 .right .instruc .submit label{
+	font:12px "微软雅黑";
+	color:#c2c2c2;
+}
+.part4 .right .instruc .submit .search{
+	width:53px;
+	height:26px;
+	background-color:rgb(56,138,193);
+	color:#fff;
+	font:12px "黑体";
+	border:0px solid #fff;
+	float:right;
 }
