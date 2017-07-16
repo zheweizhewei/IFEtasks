@@ -322,22 +322,77 @@
 }
 .part4 .left .proj{
 	padding:10px 20px;
+	position:relative;
 }
+/* [attribute^="value"] 根据属性名的一部分进行选择！*/
+.part4 .left .proj [class^="tag"]{
+	display:inline-block;
+}
+/*	z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
+	注释：元素可拥有负的 z-index 属性值。
+	注释：Z-index 仅能在定位元素上奏效（例如 position:absolute;）！*/
 .part4 .left .proj p{
 	width:86px;
 	height:16px;
 	display:inline-block;
+	position:relative;
 	font:12px "微软雅黑";
 	background-color:rgb(237,237,240);
 	text-align:center;
 	padding:5px 0px;
+	border-radius:5px 5px 0px 0px;
+	z-index:9;
 }
+.part4 .left .proj input{
+	width:86px;
+	height:26px;
+	position:absolute;
+	opacity:0;
+	cursor:pointer;
+	z-index:99;
+}
+/* element+element	div+p	选择紧接在 <div> 元素之后的所有 <p> 元素。*/
+.part4 .left .proj [class^="tag"] input:checked + p{
+	background-color:#fff;
+	border:1px solid #aaa;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border-bottom:1px solid #fff;
+}
+.part4 .left .proj [class^="tag"] input:checked + p + .material{
+	display:block;
+}
+/*当只定义position：absolute时，top,bottom，left,right都不指定，
+则left，top值与原文档流位置一致（而不是想当然的为0！！！）。即跟当它static时的位置一样，但是不占位。*/
 .part4 .left .proj .material{
+	/*none此元素不会被显示。*/
+	display:none;
+	position:absolute;	
+	top:37px;
+	left:20px;
 	box-sizing:border-box;
 	height:254px;
-	padding:40px;
+	padding:30px 40px;
 	border:1px solid #aaa;
-	border-radius:5px;
+	border-radius:0px 5px 5px 5px;
+	background-color:#fff;
+}
+.part4 .left .proj .tag-1 .material,.part4 .left .proj .tag-2 .material,.part4 .left .proj .tag-3 .material,
+.part4 .left .proj .tag-4 .material,.part4 .left .proj .tag-5 .material{
+	z-index:0;
+}
+.part4 .left .material table{
+	border-collapse:collapse;
+
+}
+.part4 .left .material td{
+	border:1px solid #aaa;
+	padding:8px 20px;
+	font:12px "宋体";
+	color:#535353;
+}
+.part4 .left .material td:hover{
+	background-color:rgb(243,244,245);
 }
 .part4 .right .instruc{
 	padding:20px 70px;
@@ -369,7 +424,7 @@
 	color:#000;
 }
 .part4 .right .instruc .description{
-	padding-bottom:80px;
+	padding-bottom:120px;
 	border-bottom:1px solid #c2c2c2;
 }
 .part4 .right .instruc .submit{
@@ -387,4 +442,151 @@
 	font:12px "黑体";
 	border:0px solid #fff;
 	float:right;
+}
+.part5 .left{
+	position:relative;
+}
+.part5 .left .calender{
+	padding:10px 23px 20px 23px;
+}
+.part5 .left .calender .select{
+	padding-bottom:10px;
+	border-bottom:1px solid rgb(169,207,236);
+}
+.part5 .left .calender select{
+	border:1px solid rgb(203,203,203);
+	height:20px;
+	font:12px "黑体";
+	color:#535353;
+	margin-left:8px;
+}
+.part5 .left .calender .year{
+	width:74px;
+}
+.part5 .left .calender .month{
+	width:64px;
+}
+.part5 .left .calender .day{
+	width:84px;
+}
+.part5 .left .calender button{
+	width:64px;
+	height:20px;
+	background-color:#fff;
+	border:1px solid rgb(203,203,203);
+}
+.part5 .left .calender .week-bar{
+	padding:10px 0px;
+	border-bottom:1px solid rgb(236,236,236);
+}
+.part5 .left .calender .week-bar label{
+	display:inline-block;
+	width:42px;
+	font:12px "黑体";
+	color:#535353;
+	text-align:center;
+}
+.part5 .left .calender .day-box{
+	
+}
+.part5 .left .calender .day-box table{
+	text-align:center;
+	vertical-align:middle;
+	font:11px "黑体";
+	color:#323333;
+}
+.part5 .left .calender .day-box table .weekend,.part5 .left .calender .day-box table .festival{
+	color:rgb(209,76,80);
+}
+.part5 .left .calender .day-box td{
+	width:49px;
+	height:41px;
+}
+.part5 .left .calender .day-box .today{
+	border:1px solid rgb(249,221,128);
+}
+.part5 .right table{
+	border-collapse:collapse;
+	table-layout: automatic;
+	margin:18px 55px;
+	vertical-align:middle;
+}
+.part5 .right td{
+	border:1px solid #aaa;
+	padding:5px 30px;
+	font:12px "黑体";
+	color:#323333;
+	text-align:center;
+}
+.part5 .right tr:hover{
+	background-color:rgb(244,245,246);
+	cursor:pointer;
+}
+.part5 .right td div{
+	display:inline-block;
+	width:170px;
+	height:4px;
+	margin-left:20px;
+	background-color:rgb(220,220,220);
+}
+/*为什么display要设置成block而inline-block却不行*/
+.part5 .right td .a1{
+	display:block;
+	background-color:rgb(237,110,82);
+	width:140px;
+	height:4px;
+}
+.part5 .right td .a2{
+	display:block;
+	background-color:rgb(239,129,80);
+	width:122px;
+	height:4px;
+}
+.part5 .right td .a3{
+	display:block;
+	background-color:rgb(241,159,79);
+	width:104px;
+	height:4px;
+}
+.part5 .right td .a4{
+	display:block;
+	background-color:rgb(127,203,240);
+	width:97px;
+	height:4px;
+}
+.part5 .right td .a5{
+	display:block;
+	background-color:rgb(127,203,240);
+	width:86px;
+	height:4px;
+}
+.part5 .right td .a6{
+	display:block;
+	background-color:rgb(127,203,240);
+	width:79px;
+	height:4px;
+}
+.part5 .right td .a7{
+	display:block;
+	background-color:rgb(127,203,240);
+	width:74px;
+	height:4px;
+}
+.part5 .right td .a8{
+	display:block;
+	background-color:rgb(127,203,240);
+	width:61px;
+	height:4px;
+}
+.part5 .right td .a9{
+	display:block;
+	background-color:rgb(127,203,240);
+	width:56px;
+	height:4px;
+}
+.part5 .right td .a10{
+	display:block;
+	background-color:rgb(127,203,240);
+	width:52px;
+	height:4px;
 }
