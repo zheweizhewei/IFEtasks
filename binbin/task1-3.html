@@ -42,6 +42,7 @@ function getData() {
   
   var data = new Array();
   for(var i=0; i<src.childNodes.length; i++){
+  //判定节点类型是否为Element，文本类型Textde nodeType=3;
    if(src.childNodes[i].nodeType == 1){
     var city = new Array(2);
     //split() 方法用于把一个字符串分割成字符串 数组。
