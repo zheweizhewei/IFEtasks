@@ -17,6 +17,7 @@ left_in.addEventListener("click", function(){
 	if((/[\d]/).test(input_num)){
 		arr.unshift(input_num);
 		show(arr);
+		addDelEvent(showbox);	
 	}else{
 		alert("Please enter a number!");
 	}
@@ -27,6 +28,7 @@ right_in.addEventListener("click", function(){
 	if((/[\d]/).test(input_num)){
 		arr.push(input_num);
 		show(arr);
+		addDelEvent(showbox);	
 	}else{
 		alert("Please enter a number!");
 	}
@@ -41,7 +43,7 @@ right_out.onclick = function(){
 };
 	
 var showbox = document.getElementById("showbox");
-delNodes(showbox);	
+
 
 function show(arr){	
 	var str = "";
@@ -50,15 +52,17 @@ function show(arr){
    }
    showbox.innerHTML = str;
  }			
-
-function delNodes(showbox){
+//闭包：只能取得包含函数中任何变量的最后一个值，可以通过创建另一个匿名函数(函数是按值传递)强制让闭包的行为符合预期。
+//问题：只有第一次的点击数删除有效，暂未找到原因。
+function addDelEvent(showbox){
 	for(var i=0; i<showbox.children.length; i++){
-		showbox.children.onclick = function(){
-			return i;
-		};
+		showbox.children[i].addEventListener("click",function(num){
+			return function(){
+				arr.splice(num,1);
+	            show(arr);
+				addDelEvent(showbox);
+			}
+		}(i),false);
 	}
-	arr.splice(i,1);
-	show(arr);
-}
-
+ }
 }
