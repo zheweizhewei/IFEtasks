@@ -9,15 +9,21 @@ var left_in = document.getElementById("left-in");
 var right_in = document.getElementById("right-in");
 var left_out = document.getElementById("left-out");
 var right_out = document.getElementById("right-out");
+var sort_arr = document.getElementById("sort");
+
 			
 var arr = [];
 
 left_in.addEventListener("click", function(){
 	var input_num = document.getElementById("number").value;
 	if((/[\d]/).test(input_num)){
-		arr.unshift(input_num);
-		show(arr);
-		addDelEvent(showbox);	
+		if(input_num < 10 || input_num > 99 ){
+			alert("请输入10-99之间的数字")
+		}else{
+			arr.unshift(input_num);
+			show(arr);
+			addDelEvent(showbox);
+		}	
 	}else{
 		alert("Please enter a number!");
 	}
@@ -41,6 +47,10 @@ right_out.onclick = function(){
 	alert(arr.pop());
 	show(arr);
 };
+sort_arr.onclick = function(){
+	arr.sort();
+	show(arr);
+}
 	
 var showbox = document.getElementById("showbox");
 
