@@ -48,9 +48,12 @@ var showbox = document.getElementById("showbox");
 function show(arr){	
 	var str = "";
 	for(var i=0; i<arr.length; i++){
-	str += ('<p>' + arr[i] + '</p>');
+	str += ('<p>' + ' ' + '</p>');
    }
    showbox.innerHTML = str;
+   for(var i=0; i<arr.length; i++){
+    showbox.childNodes[i].style.height = arr[i] + "px";
+   }
  }			
 //闭包：只能取得包含函数中任何变量的最后一个值，可以通过创建另一个匿名函数(函数是按值传递)强制让闭包的行为符合预期。
 //问题：只有第一次的点击数删除有效，暂未找到原因。(添加递归解决)
