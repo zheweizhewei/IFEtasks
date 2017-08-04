@@ -46,9 +46,11 @@ right_out.onclick = function(){
 search.onclick = function(){
 	
 	var search_text = document.getElementById("search_text").value;
-	//正则表达式构造函数(添加全局模式“g”之后不能匹配全部选项，原因：？？)
-	var reg_search = RegExp(search_text);
+	//正则表达式构造函数(添加全局模式“g”之后不能匹配全部选项，
+	//原因：只创建了一个regexp的实例，因此后一次调用会从上一次匹配的末尾开始，所以会可能找不到，可以观察lastIndex的变化。)
+	//var reg_search = RegExp(search_text,"g");
 	for(var i=0; i<arr.length; i++){
+		var reg_search = RegExp(search_text,"g");
 		showbox.childNodes[i].style.color = "#fff";
 		if(reg_search.test(arr[i])){
 			//特别标记
