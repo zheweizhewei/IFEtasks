@@ -8,22 +8,26 @@
 			display:flex;
 			border:1px solid #000;
 			flex-direction:row;
+			margin:10px;
+			justify-content:center;
+			align-items:center;
 		}
 		.root{
 			width:1000px;
 			height:600px;
 		}
-		.left1 .right1{
-			width:400px;
-			height:400px;
+		.left1,.right1{
+			width:450px;
+			height:550px;
+			flex-direction:column;
 			}
-		.left2 .right2{
-			width:150px;
-			height:100px;
+		.left2,.right2{
+			width:350px;
+			height:220px;
 			}
-		.left3 .right3{
-			width:60px;
-			height:40px;
+		.left3,.right3{
+			width:140px;
+			height:140px;
 			}
 		
 	</style>
@@ -35,26 +39,26 @@
 
 	<div class="root">
 		<div class="left1">
-		<!--<div class="left2">
+			<div class="left2">
 				<div class="left3"></div>
 				<div class="right3"></div>
 			</div>
 			<div class="right2">
 				<div class="left3"></div>
 				<div class="right3"></div>
-			</div>-->
+			</div>
 			
 		</div>
 		
 		<div class="right1">
-		<!--<div class="left2">
+			<div class="left2">
 				<div class="left3"></div>
 				<div class="right3"></div>
 			</div>
 			<div class="right2">
 				<div class="left3"></div>
 				<div class="right3"></div>
-			</div>-->
+			</div>
 			
 		</div>
 	</div>
